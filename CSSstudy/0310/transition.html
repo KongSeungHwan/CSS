@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +8,30 @@
     <style>
         #inst{
             width: 100px;height: 50px;
-            background-color: red;
-            margin-bottom:10px;
-            transition-property: width,background-color;/* 변화를 줄 속성 지정 */
-            transition-duration: 1s,1s;/* 변화가 끝나는 시간 설정 1초 */
+            background-color: red;margin-bottom: 10px;
+            transition-property: width,background-color;
+            transition-duration: 2s,2s;
         }
-        #inst:hover{
-            width:300px;/* 100>>300 1초만에 변화를 준다. */
-            background-color: blue;/* red >>blue색상으로 1초만에 변화를 준다. */
-        }
+        #inst:hover{width: 300px;background-color: blue;}
         div{
             font:bold 15px "Open Sans";
-            color:white;
-            text-align:center;
-            width:100px;height:50px;
+            color: white;
+            text-align: center;
+            width: 100px;height: 50px;
             background-color: red;
             margin-bottom: 10px;
-            transition: width 3s;/* 변화 속성, 시간 한번에 지정 */
+            transition:width 3s;
         }
-        .t1{transition-timing-function: ease;}/* 느리다가 빨라짐 */
-        .t2{transition-timing-function: linear;}/* 속성변화 일정속도 */
-        .t3{transition-timing-function: ease-in;}/* 도입부분에 느리다 빨라짐 */
-        .t4{transition-timing-function: ease-out;}/* 도입부분에 빠르다 변화 최종값 도착시간에 느려진다 */
-        .t5{transition-timing-function: ease-in-out;}/* 도입부분에도 느리고 변화 최종값 도착시간에도 느려진다 */
+        .t1{transition-timing-function: ease;}
+        .t2{transition-timing-function: linear;}
+        .t3{transition-timing-function: ease-in;}
+        .t4{transition-timing-function: ease-out;}
+        .t5{transition-timing-function: ease-in-out;}
         .timing:hover{width:300px;}
-        .d1{transition-delay: 0s;}/* 너비 100>300까지의 도착 시간 설정 */
+        .d1{transition-delay: 0s;}
         .d2{transition-delay: 1s;}
         .d3{transition-delay: 3s;}
-        .delay:hover{
-            width:300px;
-        }
+        .delay:hover{width:300px;}
     </style>
 </head>
 <body>

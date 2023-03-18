@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS float</title>
     <style>
-        img{margin-left:20px;/* border부터 outline 의 왼쪽 공백을 20px 만큼 주겠다는 의미 */
-            float: left;
-        }
+        img{ margin-left:20px; float:right;}
+
         .left{
-        background-color: orange;
-        width: 150px; height: 50px;
-        float: left;
+            background-color: orange;
+            width: 150px;height: 150px;
+            float:left;
         }
         .right{
-        background-color: violet;
-        width: 150px; height: 50px;
-        float: right;}
-        p#para{clear: both;/* 각자? */}
-        h2{text-align:center;}
-        header{border: 3px solid lightgreen;}
-        div.page{}
+            background-color: violet;
+            width: 150px;height: 150px;
+            float: right;
+        }
+        #para{clear:both;}
+
+        div.page{border:3px solid pink;overflow:auto;}
+        h2{text-align: center;}
+        header{border:3px solid sandybrown;}
+        nav{
+            border:3px solid deeppink;
+            width: 150px;min-height: 150px;
+            float:left;
+            height: 30%;
+        }
+        section{
+            border:3px solid skyblue;
+            margin-left: 160px;
+            height: 30%;
+        }
+        footer{border:3px solid lightgreen;}
+
     </style>
 </head>
 <body>
     <h3>float속성을 이용한 위치 설정</h3>
     <p>
-        <img src="../0309/images/background.png" alt="안 뜸"
-            width="250" height="180"><br>
+        <img src="../0309/images/backgroundimage.JPG" alt="카곰"
+            width="250" height="180">
         상당히 긴 문장, 잘 떠오르지 않아서 쓰는 상당히 긴 문장, 막쓰는 상당히 긴 문장
     </p>
     <br><br><br><br><br><br><br>

@@ -1,63 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS flexbox</title>
+    <title>CSS Flex box</title>
     <style>
         .flexbox{
             background-color: dimgray;
-            width: 300px; height: 200px;border-radius: 15px;
-            margin: 10px;
-            /* flexbox 사용 선언 */
-            display: flex;/* none, block, inline, inline-block*/
+            width: 300px;height: 200px;border-radius: 15px;
+            margin:10px;
+            /*flex box 사용 선언*/
+            display: flex;
         }
         .item{
             background-color: darkgray;border-radius: 10px;
-            width: 90px; height: 50px; color: white;
-            font-size: 25px;text-align:center; line-height: 30px;
+            width: 90px;height: 50px;color: white;
+            font-size: 25px;text-align: center;line-height: 30px;
         }
         #dir-wrap{
             flex-direction: row;
-            flex-wrap:wrap;/* bottom 시작으로 top으로 향함 줄바꿈도 이루어진다.*/
-            justify-content: space-evenly;
+            flex-wrap: wrap;
+            justify-content: flex-start;
         }
         #flow{
             flex-flow: column-reverse wrap;
             justify-content: flex-end;
-
         }
-        .f{
-            width:450px;height:190px; flex-flow: row wrap;
-        }
+        .f{width:450px;height:190px;flex-flow: row wrap;}
+        .heiauto{height: auto;}
         #center{
-            justify-content: center; /* 메인축 변경 가운데 나열 */
-            align-items: center;
+            justify-content: center;
+            align-content: center;
         }
         #between{
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: flex-start;
         }
         #around{
-            justify-content:space-around;
+            justify-content: space-around;
             align-items: flex-end;
         }
         #evenly{
-            justify-content:space-evenly;
-            align-content: stretch;
+            justify-content: space-evenly;
+            align-content: space-evenly;
         }
-        #strech{
+        #stretch{
             align-items: stretch;
         }
-        #align{
-            display:flex;height:4rem;/*96px*/
-            align-items:baseline;
-        }
+        #align{display: flex;height: 4rem;
+            align-items: baseline;}
         #align div:first-child{font-size: 30px;}
         #align div:nth-child(2){font-size: 15px;}
         #align div:last-child{font-size: 50px;}
-        #align{font-size: 30px;}
     </style>
 </head>
 <body>
@@ -95,7 +90,7 @@
         <div class="item heiauto">two</div>
         <div class="item heiauto">three</div>
         <div class="item heiauto">four</div>
-        <div class="item heiauto">filve</div>
+        <div class="item heiauto">five</div>
         <div class="item heiauto">six</div>
     </div>    
     <div id="stretch" class="flexbox f">
@@ -104,9 +99,10 @@
         <div class="item heiauto">three</div>
     </div>    
     <div id="align" class="flexbox">
-        <div class="item fontsize">one</div>
-        <div class="item fontsize">two</div>
-        <div class="item fontsize">three</div>
-    </div>
+        <div class="item fontsize">가</div>
+        <div class="item fontsize">나</div>
+        <div class="item fontsize">다</div>
+    </div>    
+       
 </body>
 </html>

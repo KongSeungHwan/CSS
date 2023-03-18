@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text</title>
     <style>
         #p01,#p02{
             border: 1px solid black;
             white-space: nowrap;
+            width: 250px;
             overflow: hidden;
         }
         #p03,#p04,#p05,#p06,#p07,#p08{
-            border: 1px solid black;
+            border:1px solid black;
             width: 130px;
         }
         #p01{text-overflow: clip;}
         #p02{text-overflow: ellipsis;}
         #p01:hover,#p02:hover{overflow: visible;}
+        
         #p03,#p05{word-wrap: break-word;}
         #ex1{text-emphasis: filled;}
-        #ex2{text-emphasis: open;}/* 강조 */
-        #ex3{text-emphasis: double-circle;}
-        #ex4{text-emphasis-style: triangle; text-emphasis-color: blue;}
+        #ex2{text-emphasis: open;}
+        #ex3{text-emphasis: double-circle red;}
+        #ex4{text-emphasis-style: triangle ; 
+            text-emphasis-color: blue;}
         #p06{word-wrap: break-word;}
         #p07{word-break: break-all;}
         #p08{word-break: keep-all;}
@@ -46,6 +49,6 @@
     7<p id="p07">contents영역을 벗어난
         <span id="ex5">기나긴기나긴기나긴기나긴단어</span>
         wordwordwordwordword가 표시됩니다.</p>
-    8<p id="p08">contents영역을 벗어난 word-word-word-word-word가 표시됩니다.</p>문어
+    8<p id="p08">contents영역을 벗어난 word-word-word-word-word가 표시됩니다.</p>
 </body>
 </html>
